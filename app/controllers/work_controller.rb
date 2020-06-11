@@ -3,7 +3,8 @@ class WorkController < ApplicationController
   include WorkImage
   include WorkHelper
 
-  def index
+
+   def index
     @images_count = Image.all.count
     # @selected_theme = "Select theme to leave your answer"
     @selected_theme = t('.def_select_theme')

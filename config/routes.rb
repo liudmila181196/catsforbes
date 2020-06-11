@@ -41,7 +41,7 @@ Rails.application.routes.draw do
     
     match 'work',             to: 'work#index',             via: 'get'
     match 'choose_image',     to: 'work#choose_image',      via: :get
-    match 'choose_theme',     to: 'work#choose_theme',      via: :get, defaults: {format: :js}
+    match 'choose_theme',     to: 'work#choose_theme',      via: :get
     match 'display_theme',    to: 'work#display_theme',     via: :post
     # match 'next_image',       to: 'work#next_image',   via: 'get'
     
