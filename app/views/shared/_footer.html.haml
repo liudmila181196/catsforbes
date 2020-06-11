@@ -1,0 +1,36 @@
+-#%footer.footer
+  %h3{style: "color: #c4f7ff; font-size: 1.3em; position: relative; left: 20%; margin-top: .55em;"}
+    Experteese
+    %i.fa.fa-copyright.iconsMain{ style: " font-size: 1.3em; " }
+    = Date.current.year
+
+    %p.app_notice_dev{style: " font-size: 1em; position: relative; left: 40%;"}
+      %span{ style: "color: #730E15; font-size: 1.3em; position: relative; left: 11%;" }
+        %i.fa.fa-flag.iconsMain{ style: "color: #730E15; font-size: 1em; " }
+          = t('.dev_msg')
+
+
+  .footer_menu
+    %nav
+      %ul
+        %li= link_to t('.about'), about_path
+        %li= link_to t('.contact'), contacts_path
+        -#%li
+        -#  %a{:href => "http://news.railstutorial.org/"} News
+
+
+%footer.pt-4.my-md-5.pt-md-3.border-top
+  %ul.list-inline
+    %a.list-inline-item
+      %a.text-muted{href: contacts_path}
+        =t('.contact')
+      %a.text-muted{href: help_path}
+        =t('.help')
+      %a.p-2
+        = link_to image_tag("Russia.jpg", alt: "",  style: "width: 60px; height: 30px", title: "Русский" ), locale: :ru
+        = link_to image_tag("United_Kingdom.jpg", alt: "",  style: "width: 60px; height: 30px", title: "English"), locale: :en
+        %b.p-2
+          = I18n.locale
+    %p.mb-1
+      = link_to image_tag('ruby.ico', width: 40), 'http://rubyonrails.org/'
+      © 2020

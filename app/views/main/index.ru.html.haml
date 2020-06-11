@@ -1,0 +1,13 @@
+- content_for(:title,  "Index")
+
+%h1
+
+%main.main.inner.cover
+  %h1.cover-heading Оцените котиков!
+  %p.lead
+    У нас много фото котиков и они ждут оценки =^.^=
+  %p.lead
+    - if signed_in?
+      %a.btn.btn-outline-primary{href: work_path} Оценить
+    - else
+      %a.btn.btn-outline-primary{href: signup_path} Зарегистрироваться

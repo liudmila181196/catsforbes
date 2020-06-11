@@ -1,0 +1,11 @@
+-#/**
+-# * Created by aleks_ivanishchev on 25.03.16.
+-# */
+
+%button.btn.btn-outline-primary
+  = link_to t('.select_theme_bt'),
+    choose_theme_path,
+    title: "Select theme from your device folder",
+    locale: @current_locale,
+    format: "js",
+    remote: true
