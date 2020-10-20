@@ -24,7 +24,7 @@ class WorkController < ApplicationController
 
     @themes = Theme.all.pluck(:name)
     logger.info "In WorkController#choose_theme @themes = #{@themes}"
-    respond_to :js
+
   end
 
     

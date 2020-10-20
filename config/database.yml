@@ -13,14 +13,14 @@ default: &default
   adapter: postgresql
   encoding: UTF8
   reaping_frequency: 30
-  username: expert
+  username: nazarovali
   timeout: 5000
   pool: 5 #<%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: expert_development
-  password: 'password'
+  database: nazarovali_development
+  password: '181196'
 #  password: password
 
 # Warning: The database defined as "test" will be erased and
@@ -28,10 +28,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: expert_test
-  password: 'password'
+  database: nazarovali_test
+  password: '181196'
 
 production:
   <<: *default
-  database: expert_production
-  password: 'password'
+  database: nazarovali_production
+  password: '181196'
